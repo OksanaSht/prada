@@ -13,7 +13,36 @@
     />
   </head>
   <body>
-    <header>123</header>
+    <header>
+      <div class="header">
+       <div class="header__container">
+          <a href="index.html"><img src="./public/images/logo_blue.png" alt="logo_blue"></a>
+        <nav class ="header__menu">
+          <ul class="header__ul">
+              <li class="header__item-li"><a class="header__link" href="#">Men</a></li>
+              <li class="header__item-li"><a class="header__link" href="#">Women</a></li>
+              <li class="header__item-li"><a class="header__link" href="#">Kids</a></li>
+              <li class="header__item-li"><a class="header__link" href="#">Shop</a></li>
+              <li class="header__item-li"><a class="header__link" href="#">Contact us</a></li>
+          </ul>
+        </nav>
+
+        <form class="header__search">
+          <input type="search" name="search" id="search" placeholder="Search here">
+          <button type="submit"><img src="./public/images/search.png" alt="search"></button>
+        </form>
+      
+        <button type="button" class="header__button"><img src="./public/images/codicon_heart.png" alt="heart"></button>
+        <button type="button" class="header__button"><img src="./public/images/shopping.png" alt="shopping"></button>
+
+        <div class="header__avatar">
+          <div class="header__avatar-img"><img src="./public/avatar/avatar.png" alt="avatar"></div>
+          <div class="header__avatar-text">Anne Doe</div>
+        </div>
+
+         </div>
+       </div>
+    </header>
     <footer>123</footer>
     <script type="module" src="./src/index.ts"></script>
   </body>

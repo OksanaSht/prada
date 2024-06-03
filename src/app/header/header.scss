@@ -1,2 +1,36 @@
 .header {
+    &__avatar {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    &__avatar-img {
+    }
+
+    &__avatar-text {
+    }
+
+    &__button {
+    }
+
+    &__container {
+width: 1920px;
+height: 80px;
+    }
+
+    &__item-li {
+    }
+
+    &__link {
+    }
+
+    &__search {
+    }
+
+    &__ul {
+       display: flex;
+       flex-direction: row;
+    }
 }
