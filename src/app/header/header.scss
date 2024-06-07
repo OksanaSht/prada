@@ -1,36 +1,127 @@
 .header {
-    &__avatar {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+
+  &__logo {
+    width: 50px;
+    img {
+      width: 100%;
+      height: auto;
     }
-    
-    &__avatar-img {
+  }
+
+  &__avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    margin-left: 15px;
+  }
+
+  &__avatar-img {
+    width: 42px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+
+  &__avatar-text {
+    font-family: Libre Baskerville;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: left;
+    color: rgba(100, 100, 100, 1);
+  }
+
+  &__button {
+    width: 29px;
+    height: 29px;
+    border: none;
+    background: transparent;
+    margin-right: 10px;
+    img {
+      width: 100%;
+      height: auto;
     }
 
-    &__avatar-text {
+    &:hover {
+      transform: scale(0.9);
     }
+  }
 
-    &__button {
-    }
+  &__container {
+    max-width: 1820px;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
 
-    &__container {
-width: 1920px;
-height: 80px;
-    }
+  &__item {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 12px;
+  }
 
-    &__item-li {
+  &__link {
+    color: rgba(39, 39, 39, 1);
+    color: rgba(39, 39, 39, 1);
+    font-family: Libre Baskerville;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    &:hover {
+      transform: scale(1.1);
     }
+  }
 
-    &__link {
-    }
+  form {
+    margin-right: 20px;
+  }
 
-    &__search {
-    }
+  &__search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    &__ul {
-       display: flex;
-       flex-direction: row;
-    }
+  &__text-search {
+    width: 400px;
+    height: 48px;
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+    background-color: rgba(240, 240, 240, 1);
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 14px;
+  }
+
+  &__start-search {
+    background-color: rgba(240, 240, 240, 1);
+    border: none;
+    margin: 0;
+    height: 48px;
+    border-radius: 0px 8px 8px 0px;
+  }
+
+  &__container-img {
+    display: flex;
+    height: 50%;
+  }
+  &__img-search {
+    width: 100%;
+    height: auto;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+  }
 }

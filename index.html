@@ -15,35 +15,158 @@
   <body>
     <header>
       <div class="header">
-       <div class="header__container">
-          <a href="index.html"><img src="./public/images/logo_blue.png" alt="logo_blue"></a>
-        <nav class ="header__menu">
-          <ul class="header__ul">
-              <li class="header__item-li"><a class="header__link" href="#">Men</a></li>
-              <li class="header__item-li"><a class="header__link" href="#">Women</a></li>
-              <li class="header__item-li"><a class="header__link" href="#">Kids</a></li>
-              <li class="header__item-li"><a class="header__link" href="#">Shop</a></li>
-              <li class="header__item-li"><a class="header__link" href="#">Contact us</a></li>
-          </ul>
-        </nav>
+        <div class="header__container">
+          <a href="/" class="header__logo"
+            ><img src="./public/images/logo.svg" alt="Logo blue"
+          /></a>
+          <nav class="header__menu">
+            <ul class="header__list">
+              <li class="header__item">
+                <a class="header__link" href="#">Men</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Women</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Kids</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Shop</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="#">Contact us</a>
+              </li>
+            </ul>
+          </nav>
 
-        <form class="header__search">
-          <input type="search" name="search" id="search" placeholder="Search here">
-          <button type="submit"><img src="./public/images/search.png" alt="search"></button>
-        </form>
-      
-        <button type="button" class="header__button"><img src="./public/images/codicon_heart.png" alt="heart"></button>
-        <button type="button" class="header__button"><img src="./public/images/shopping.png" alt="shopping"></button>
+          <form class="header__search">
+            <input
+              class="header__text-search"
+              type="search"
+              name="search"
+              id="search"
+              placeholder="Search here"
+            />
+            <button class="header__start-search">
+              <div class="header__container-img">
+                <img
+                  class="header__img-search"
+                  src="./public/images/search.svg"
+                  alt=" Search"
+                />
+              </div>
+            </button>
+          </form>
 
-        <div class="header__avatar">
-          <div class="header__avatar-img"><img src="./public/avatar/avatar.png" alt="avatar"></div>
-          <div class="header__avatar-text">Anne Doe</div>
+          <button type="button" class="header__button">
+            <img src="./public/images/heart.svg" alt="Heart" />
+          </button>
+          <button type="button" class="header__button">
+            <img src="./public/images/shopping.svg" alt="Shopping" />
+          </button>
+
+          <div class="header__avatar">
+            <div class="header__avatar-img">
+              <img src="./public/avatar/avatar.svg" alt="A v a t a r" />
+            </div>
+            <div class="header__avatar-text">Anne Doe</div>
+          </div>
         </div>
-
-         </div>
-       </div>
+      </div>
     </header>
-    <footer>123</footer>
+
+    <footer>
+      <div class="footer">
+        <div class="footer__container">
+          <div class="footer__title">
+            <div class="footer__logo">
+              <img src="./public/images/logo_white.svg" alt="White logo" />
+            </div>
+            <div class="footer__name">Globex</div>
+          </div>
+          <div class="footer__columns">
+            <div class="footer__item">
+              <div class="footer__item-title">Women</div>
+              <a href="#" class="footer__text">All Women</a>
+              <a href="#" class="footer__text">Skirts</a>
+              <a href="#" class="footer__text">T- Shirts</a>
+              <a href="#" class="footer__text">Tops</a>
+              <a href="#" class="footer__text">Jackets</a>
+            </div>
+            <div class="footer__item">
+              <div class="footer__item-title">Men</div>
+              <a href="#" class="footer__text">All Men</a>
+              <a href="#" class="footer__text">Shirts</a>
+              <a href="#" class="footer__text">T- Shirts</a>
+              <a href="#" class="footer__text">Shorts</a>
+              <a href="#" class="footer__text">Jackets</a>
+            </div>
+            <div class="footer__item">
+              <div class="footer__item-title">Kids</div>
+              <a href="#" class="footer__text">All Kids</a>
+              <a href="#" class="footer__text">Shirts</a>
+              <a href="#" class="footer__text">T- Shirts</a>
+              <a href="#" class="footer__text">Shorts</a>
+              <a href="#" class="footer__text">Jackets</a>
+            </div>
+            <div class="footer__item">
+              <div class="footer__item-title">Shopping</div>
+              <a href="#" class="footer__text">Your cart</a>
+              <a href="#" class="footer__text">your orders</a>
+              <a href="#" class="footer__text">Compared items</a>
+              <a href="#" class="footer__text">Wishlist</a>
+              <a href="#" class="footer__text">Shipping Details</a>
+            </div>
+            <div class="footer__item">
+              <div class="footer__item-title">More links</div>
+              <a href="#" class="footer__text">Blogs</a>
+              <a href="#" class="footer__text">Gift center</a>
+              <a href="#" class="footer__text">Buying guides</a>
+              <a href="#" class="footer__text">New arrivals</a>
+              <a href="#" class="footer__text">Clearance</a>
+            </div>
+            <div class="footer__item">
+              <div class="footer__item-title">Stay In Touch</div>
+              <div class="footer__text">
+                Stay in touch to get special offers, free giveaways and once in
+                a lifetime deals
+              </div>
+              <div class="footer__enter-mail">
+              <div class="footer__envelope-img"></div>
+              <input
+                class="footer__mail"
+                type="email"
+                name="mail"
+                id="mail"
+                placeholder="Enter your email"
+              />
+            </div>
+            </div>
+          </div>
+          <hr />
+          <div class="footer__bottom">
+            <a href="#" class="footer__bottom-text">Terms & Conditions</a>
+            <a href="#" class="footer__bottom-text">Privacy Policy</a>
+
+            <div class="footer__icons">
+              <a href="#" class="footer__img">
+                <img src="./public/images/facebook.svg" alt="Facebook" />
+              </a>
+              <a class="footer__img" href="#">
+                <img src="./public/images/instagram.svg" alt="Instagram" />
+              </a>
+
+              <a href="#" class="footer__img">
+                <img src="./public/images/watsapp.svg" alt="Watsapp" />
+              </a>
+              <a href="#" class="footer__img">
+                <img src="./public/images/twitter.svg" alt="Twitter" />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="./src/index.ts"></script>
   </body>
 </html>
