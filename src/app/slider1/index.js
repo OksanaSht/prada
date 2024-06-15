@@ -1,4 +1,4 @@
-import "./slider.css";
+import "./slider1.css";
 import Swiper from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 
