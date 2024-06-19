@@ -1,3 +1,3 @@
 import "./header";
 import "./footer";
-import "./slider1";
+import "./slider";
