@@ -1,11 +1,28 @@
 .button {
-  border: 1px solid #000;
-  color: #000;
-  padding: 20px;
-  border-radius: 10px;
+  width: clamp(4.375rem, 3.042rem + 6.67vw, 10.625rem);
+  height:clamp(1.75rem, 1.523rem + 1.13vw, 2.813rem);
+  border: 1.5px solid #000;
+
+  &--black {
+    padding: clamp(0.25rem, 0.197rem + 0.27vw, 0.5rem) clamp(0.938rem, 0.671rem + 1.33vw, 2.188rem);
+    border-radius: clamp(0.438rem, 0.397rem + 0.2vw, 0.625rem);
+    font-family: Libre Baskerville;
+    font-size: clamp(0.625rem, 0.492rem + 0.67vw, 1.25rem);
+    font-weight: 400;
+    color: rgba(34, 34, 34, 1);
+    background-color: transparent;
+    margin-bottom: 3rem;
+  }
 
   &--white {
-    border-color: #fff;
-    color: #fff;
+    padding: clamp(0.25rem, 0.197rem + 0.27vw, 0.5rem) clamp(0.938rem, 0.671rem + 1.33vw, 2.188rem);
+    border-radius: clamp(0.438rem, 0.397rem + 0.2vw, 0.625rem);
+    border: 1.5px solid white;
+    font-size: clamp(0.625rem, 0.492rem + 0.67vw, 1.25rem);
+    font-weight: 400;
+    font-family: Libre Baskerville;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    margin-bottom: 3rem;
   }
 }

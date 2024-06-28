@@ -11,6 +11,12 @@
       href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
@@ -56,32 +62,33 @@
             </div>
           </button>
         </form>
+        <div class="header__flex-buttons-avatar">
+          <button type="button" class="header__button">
+            <img src="/images/heart.svg" alt="Heart" />
+          </button>
+          <button type="button" class="header__button">
+            <img src="/images/shopping.svg" alt="Basket" />
+          </button>
 
-        <button type="button" class="header__button">
-          <img src="/images/heart.svg" alt="Heart" />
-        </button>
-        <button type="button" class="header__button">
-          <img src="/images/shopping.svg" alt="Basket" />
-        </button>
-
-        <div class="header__avatar">
-          <div class="header__avatar-img">
-            <img src="/avatar/avatar.svg" alt="Avatar" />
+          <div class="header__avatar">
+            <div class="header__avatar-img">
+              <img src="/avatar/avatar.svg" alt="Avatar" />
+            </div>
+            <div class="header__avatar-text">Anne Doe</div>
           </div>
-          <div class="header__avatar-text">Anne Doe</div>
         </div>
       </div>
     </header>
     <main>
-      <section class="slider-swiper1">
-        <div class="slider-swiper1__invite-friends container">
-          <div class="slider-swiper1__text-top">
+      <section class="slider-swiper">
+        <div class="slider-swiper__invite-friends container">
+          <div class="slider-swiper__text-top">
             Invite Friends and get 50% off on your next purchase
           </div>
-          <a class="slider-swiper1__link-top" href="#">Invite Now</a>
-          <button class="slider-swiper1__button" type="button">
+          <a class="slider-swiper__link-top" href="#">Invite Now</a>
+          <button class="slider-swiper__button" type="button">
             <img
-              class="slider-swiper1__icon-close"
+              class="slider-swiper__icon-close"
               src="/images/icon_close.svg"
               alt="close window"
             />
@@ -90,29 +97,62 @@
         <div class="swiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <img
-                class="swiper-slide__img"
-                src="/slides/slide1.svg"
-                alt="Prada 50%-80% off"
-              />
+              <div class="swiper-slide__flex-container">
+                <div class="swiper-slide__girl-prada">
+                  <img
+                    class="swiper-slide__img-girl"
+                    src="/slides/girl_prada.jpg"
+                    alt="Prada girl"
+                  />
+                </div>
+                <div class="swiper-slide__background-prada">
+                  <div class="swiper-slide__text-prada">
+                    <img
+                      class="swiper-slide__img-text-prada"
+                      src="/slides/vector_prada.svg"
+                      alt="title Prada"
+                    />
+                  </div>
+                  <div>Big Fashion Festival</div>
+                  <div>50% - 80% off</div>
+                  <button type="button" class="button--black">Explore</button>
+                </div>
+              </div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="swiper-slide__img"
-                src="/slides/slide2.svg"
-                alt="Forever 21 70%-80% off"
-              />
+              <div class="swiper-slide__background-girl">
+                <div class="swiper-slide__background-dark">
+                  <div class="swiper-slide__flex-in-dark">
+                    <div class="swiper-slide__forever-title">FOREVER 21</div>
+                    <div>Big Fashion Festival</div>
+                    <div>70% - 80% off</div>
+                    <button type="button" class="button--white">Explore</button>
+                  </div>
+                </div>
+              </div>
             </div>
             <div class="swiper-slide">
-              <img
-                class="swiper-slide__img"
-                src="/slides/slide3.svg"
-                alt="Forever 21 50%-80% off"
-              />
+              <div class="swiper-slide__container-forever21">
+                <div class="swiper-slide__girl-forever21">
+                  <img
+                    class="swiper-slide__girl-forever21-img"
+                    src="/slides/girl_forever21.jpg"
+                    alt="girl in green dress"
+                  />
+                </div>
+                <div class="swiper-slide__text-forever21">
+                  <div class="swiper-slide__forever-title">FOREVER 21</div>
+                  <div>Big Fashion Festival</div>
+                  <div>50% - 80% off</div>
+                  <button type="button" class="button--white">
+                    Explore Now
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
 
-          <div class="swiper-pagination"></div>
+          <div class="pagin swiper-pagination"></div>
         </div>
       </section>
     </main>

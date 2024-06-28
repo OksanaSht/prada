@@ -6,11 +6,24 @@
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 .container {
-  max-width: 1820px;
+  max-width: clamp(19.688rem, -0.112rem + 99vw, 112.5rem);
   margin: 0 auto;
   padding: 0 1rem;
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .container {
+    max-width: clamp(29.688rem, -0.689rem + 101.05vw, 47.813rem);
+    padding: 0 2.5rem;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .container {
+    max-width: clamp(48.438rem, 6.029rem + 88.24vw, 62.5rem);
+    padding: 0 2.5rem;
+  }
+}

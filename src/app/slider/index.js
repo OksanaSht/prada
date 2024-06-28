@@ -11,10 +11,14 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   loop: true,
   autoHeight: true,
+
   pagination: {
     el: ".swiper-pagination",
     type: "bullets",
     clickable: true,
-    dynamicMainBullets: true,
+   
+    
+
+
   },
 });
