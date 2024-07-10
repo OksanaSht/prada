@@ -1,4 +1,4 @@
-.swiper {
+.slider {
   min-width: 100vw;
   display: flex;
   flex-direction: column;
@@ -11,19 +11,18 @@
   }
 }
 
-.swiper-wrapper {
+.wrapper {
   margin-bottom: 3rem;
   display: flex;
   max-height: 100%;
   max-width: 100%;
 }
 
-.swiper-pagination {
-  &-bullet-active {
-    background-color: rgba(0, 36, 130, 1);
-    background-size: 100%;
-    transform: scale(1.1);
-  }
+// TODO
+.swiper-pagination-bullet-active {
+  background-color: rgba(0, 36, 130, 1);
+  background-size: 100%;
+  transform: scale(1.1);
 }
 
 .swiper-slide {
@@ -67,7 +66,7 @@
     word-wrap: break-word;
   }
 
-  &__flex-container {
+  &__container {
     max-height: 100%;
     min-width: 100%;
     background: url(/slides/background_prada.jpg);

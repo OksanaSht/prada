@@ -1,9 +1,10 @@
 import Swiper from "swiper";
+import { clsx } from "clsx";
 import { Navigation, Pagination } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "./styles.scss";
+import styles from "./styles.module.scss";
 import { useEffect, useRef } from "react";
 
 export const HomeSlider = () => {
@@ -15,7 +16,6 @@ export const HomeSlider = () => {
       direction: "horizontal",
       loop: true,
       autoHeight: true,
-
       pagination: {
         el: ".swiper-pagination",
         type: "bullets",
@@ -29,10 +29,10 @@ export const HomeSlider = () => {
   }, []);
 
   return (
-    <div ref={swiperRef} className="swiper">
-      <div className="swiper-wrapper">
+    <div ref={swiperRef} className={clsx("swiper", styles.slider)}>
+      <div className={clsx("swiper-wrapper", styles.wrapper)}>
         <div className="swiper-slide">
-          <div className="swiper-slide__flex-container">
+          <div className="swiper-slide__container">
             <div className="swiper-slide__girl-prada">
               <img
                 className="swiper-slide__img-girl"
