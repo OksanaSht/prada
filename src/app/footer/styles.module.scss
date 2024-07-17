@@ -3,17 +3,19 @@
   color: #fff;
   padding: clamp(0.625rem, 0.358rem + 1.33vw, 1.875rem) 0;
 
-  &__bottom {
+  .bottom {
     display: flex;
     justify-content: space-around;
     align-items: center;
     width: 70%;
     margin: 0 auto;
   }
-  &__bottom-text {
+  .bottomText {
     font-size: clamp(0.625rem, 0.492rem + 0.67vw, 1.25rem);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
   }
-  &__columns {
+  .footerColumns {
     display: flex;
     justify-content: center;
     align-items: start;
@@ -21,29 +23,25 @@
     margin-bottom: 30px;
   }
 
-  &__container {
+  .footerContainer {
     display: flex;
     flex-direction: column;
-
-    a {
-      text-decoration: none;
-      color: rgba(255, 255, 255, 1);
-    }
+    padding: 0 3%;
   }
 
-  &__icons {
+  .icons {
     display: flex;
     justify-content: space-around;
     align-items: center;
   }
 
-  &__img {
+  .imgIcons {
     margin: clamp(0.625rem, 0.492rem + 0.67vw, 1.25rem);
     width: 100%;
     height: auto;
   }
 
-  &__item {
+  .footerItem {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -54,25 +52,25 @@
     flex: 20%;
   }
 
-  &__item-title {
+  .itemTitle {
     font-family: Libre Baskerville;
     font-size: clamp(0.688rem, 0.568rem + 0.6vw, 1.25rem);
     font-weight: 700;
     text-align: left;
   }
 
-  &__logo {
+  .footerLogo {
     width: clamp(1.875rem, 1.342rem + 2.67vw, 4.375rem);
     height: clamp(1.875rem, 1.342rem + 2.67vw, 4.375rem);
     margin-bottom: clamp(0.625rem, 0.358rem + 1.33vw, 1.875rem);
 
-    img {
+    .img {
       width: 100%;
       height: auto;
     }
   }
 
-  &__name {
+  .footerName {
     font-family: Libre Baskerville;
     font-size: clamp(1.875rem, 1.475rem + 2vw, 3.75rem);
     font-weight: 700;
@@ -80,21 +78,23 @@
     padding-left: 30px;
   }
 
-  &__text {
+  .footerLink {
     font-family: Libre Baskerville;
     font-size: clamp(0.625rem, 0.585rem + 0.2vw, 0.813rem);
     font-weight: 400;
     margin-top: clamp(0.938rem, 0.844rem + 0.47vw, 1.375rem);
     text-align: left;
     line-height: clamp(1.125rem, 0.965rem + 0.8vw, 1.875rem);
+    text-decoration: none;
+    color: rgba(255, 255, 255, 1);
   }
 
-  &__title {
+  .footerTitle {
     display: flex;
     justify-content: flex-start;
   }
 
-  &__enter-mail {
+  .enterMail {
     border: 1px solid rgba(171, 171, 171, 1);
     display: flex;
     justify-content: center;
@@ -103,7 +103,7 @@
     font-size: clamp(0.313rem, 0.193rem + 0.6vw, 0.875rem);
   }
 
-  &__mail {
+  .mail {
     width: clamp(6.25rem, 4.783rem + 7.33vw, 13.125rem);
     height: clamp(1.25rem, 1.117rem + 0.67vw, 1.875rem);
     background-color: rgba(0, 7, 27, 1);
@@ -112,7 +112,7 @@
     outline: none;
   }
 
-  &__envelope-img {
+  .envelopeImg {
     width: clamp(0.625rem, 0.225rem + 2vw, 2.5rem);
     height: clamp(1.25rem, 1.117rem + 0.67vw, 1.875rem);
     background: url(/images/mail.svg) no-repeat

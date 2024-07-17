@@ -3,7 +3,7 @@
   height:clamp(1.75rem, 1.523rem + 1.13vw, 2.813rem);
   border: 1.5px solid #000;
 
-  &--black {
+  .blackButton {
     padding: clamp(0.25rem, 0.197rem + 0.27vw, 0.5rem) clamp(0.938rem, 0.671rem + 1.33vw, 2.188rem);
     border-radius: clamp(0.438rem, 0.397rem + 0.2vw, 0.625rem);
     font-family: Libre Baskerville;
@@ -14,7 +14,7 @@
     margin-bottom: 3rem;
   }
 
-  &--white {
+  .whiteButton {
     padding: clamp(0.25rem, 0.197rem + 0.27vw, 0.5rem) clamp(0.938rem, 0.671rem + 1.33vw, 2.188rem);
     border-radius: clamp(0.438rem, 0.397rem + 0.2vw, 0.625rem);
     border: 1.5px solid white;
@@ -25,4 +25,5 @@
     background-color: transparent;
     margin-bottom: 3rem;
   }
+
 }
