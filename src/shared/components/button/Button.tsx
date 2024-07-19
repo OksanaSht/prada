@@ -1,12 +1,27 @@
-import "./styles.module.scss";
+import { ButtonHTMLAttributes } from "react";
+import styles from "./styles.module.scss";
 import { clsx } from "clsx";
 
-
-interface ButtonProps {
+interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   children: React.ReactNode;
-  className?:  React.ReactNode;
+  color?: "dark" | "light";
 }
 
-export const Button = ({ children }: ButtonProps, { className } : ButtonProps) => {
-  return <button className = {clsx("button", className)}>{children}</button>;
+export const Button = ({
+  children,
+  color = "light",
+  className,
+  ...props
+}: ButtonProps) => {
+  return (
+    <button
+      className={clsx(className, styles.button, {
+        [styles.light]: color === "light",
+        [styles.dark]: color === "dark",
+      })}
+      {...props}
+    >
+      {children}
+    </button>
+  );
 };

@@ -20,12 +20,11 @@
 
 // TODO
 .swiper-pagination {
-.bullet-active{
-   
-  background-color: rgba(0, 36, 130, 1);
-  background-size: 100%;
-  transform: scale(1.1);
-}
+  .bullet-active {
+    background-color: rgba(0, 36, 130, 1);
+    background-size: 100%;
+    transform: scale(1.1);
+  }
 }
 
 .slide {
@@ -40,7 +39,7 @@
     height: auto;
   }
 
-  .foreverTitle{
+  .foreverTitle {
     font-size: clamp(1rem, -0.455rem + 7.27vw, 4.1rem);
     letter-spacing: 5px;
     font-family: "Roboto Condensed", sans-serif;
@@ -78,7 +77,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    font-family: Libre Baskerville;
     font-size: clamp(0.813rem, 0.479rem + 1.67vw, 2.375rem);
     font-weight: 700;
     line-height: 4rem;
@@ -108,7 +106,6 @@
   }
 
   .flexDark {
-    font-family: "Libre Baskerville";
     font-size: clamp(1.125rem, 0.725rem + 2vw, 3rem);
     font-weight: 700;
     line-height: 5rem;
@@ -139,7 +136,6 @@
     width: 45%;
     height: 100%;
     color: #fff;
-    font-family: "Libre Baskerville";
     font-size: clamp(0.813rem, 0.479rem + 1.67vw, 2.375rem);
     font-weight: 700;
     line-height: clamp(3.8rem, 3.544rem + 1.28vw, 5rem);
@@ -156,4 +152,7 @@
     height: auto;
   }
 }
- 
+
+.exploreButton {
+  margin-bottom: 1rem;
+}
