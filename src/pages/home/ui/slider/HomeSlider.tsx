@@ -63,9 +63,7 @@ export const HomeSlider = () => {
                 <div className={styles.foreverTitle}>FOREVER 21</div>
                 <div>Big Fashion Festival</div>
                 <div>70% - 80% off</div>
-                <Button className={clsx("button", styles.whiteButton)}>
-                  Explore
-                </Button>
+                <Button color="light">Explore</Button>
               </div>
             </div>
           </div>
@@ -84,7 +82,9 @@ export const HomeSlider = () => {
               <div className={styles.foreverTitle}>FOREVER 21</div>
               <div>Big Fashion Festival</div>
               <div>50% - 80% off</div>
-              <Button className={styles.exploreButton}>Explore Now</Button>
+              <Button className="button" color="light">
+                Explore Now
+              </Button>
             </div>
           </div>
         </div>

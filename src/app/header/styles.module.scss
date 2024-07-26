@@ -4,15 +4,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .logo {
-  width: 50px;
+  width: 5vw;
 
-  img {
-    width: 100%;
-    height: auto;
+  @media screen and (max-width: 768px) {
+    width: 8vw;
   }
+}
+img {
+  width: 100%;
+  height: auto;
 }
 
 .avatar {
@@ -34,10 +45,14 @@
 }
 
 .avatarText {
-  font-size: clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+  font-size: 1.2vw;
   font-weight: 400;
   text-align: left;
   color: rgba(100, 100, 100, 1);
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.3vw;
+  }
 }
 
 .button {
@@ -46,17 +61,23 @@
   border: none;
   background: transparent;
   margin-right: 10px;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .container {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media screen and (max-width: 992px) {
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    justify-items: center;
+  }
 }
 
 .item {
@@ -69,9 +90,13 @@
 
 .link {
   color: rgba(39, 39, 39, 1);
-  font-size: clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+  font-size: 1.5vw;
   font-weight: 400;
   text-decoration: none;
+
+  @media screen and (max-width: 768px) {
+    font-size: 2.3vw;
+  }
 }
 
 .form {
@@ -123,103 +148,4 @@
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-@media screen and (min-width: 320px) and (max-width: 480px) {
-  .header {
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-
-  .logo {
-    width: 30px;
-  }
-
-  .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-  }
-
-  .form {
-    margin-left: 1.5rem;
-  }
-
-  .list {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 10px;
-    text-align: center;
-  }
-
-  .button {
-    margin: 1rem;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .header {
-    padding: 10px 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo {
-    width: 30px;
-  }
-
-  .container {
-    display: grid;
-    grid-template-columns: 2fr;
-    gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    justify-items: center;
-  }
-
-  .form {
-    margin-right: 0px;
-  }
-
-  .list {
-    display: flex;
-    justify-content: space-around;
-    margin: 0 10px;
-    text-align: center;
-  }
-
-  .button {
-    margin: 1rem;
-    justify-content: center;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1024px) {
-  .container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 0 auto;
-    gap: 1rem;
-  }
-
-  .logo {
-    width: 40px;
-  }
-
-  .flexButtonsAvatar {
-    display: flex;
-    justify-content: flex-end;
-  }
 }

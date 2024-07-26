@@ -6,7 +6,11 @@ export const Footer = () => {
       <div className={styles.footerContainer}>
         <div className={styles.footerTitle}>
           <div className={styles.footerLogo}>
-            <img className={styles.img} src="/images/logo_white.svg" alt="White logo" />
+            <img
+              className={styles.img}
+              src="/images/logo_white.svg"
+              alt="White logo"
+            />
           </div>
           <div className={styles.footerName}>Globex</div>
         </div>
@@ -130,17 +134,32 @@ export const Footer = () => {
 
           <div className={styles.icons}>
             <a href="#" className={styles.imgIcons}>
-              <img className={styles.img} src="/images/facebook.svg" alt="Facebook" />
+              <img
+                className={styles.img}
+                src="/images/facebook.svg"
+                alt="Facebook"
+              />
             </a>
             <a className={styles.imgIcons} href="#">
-              <img className={styles.img} src="/images/instagram.svg" alt="Instagram" />
+              <img
+                className={styles.img}
+                src="/images/instagram.svg"
+                alt="Instagram"
+              />
             </a>
-
             <a href="#" className={styles.imgIcons}>
-              <img className={styles.img} src="/images/watsapp.svg" alt="Watsapp" />
+              <img
+                className={styles.img}
+                src="/images/watsapp.svg"
+                alt="Whatsapp"
+              />
             </a>
             <a href="#" className={styles.imgIcons}>
-              <img className={styles.img} src="/images/twitter.svg" alt="Twitter" />
+              <img
+                className={styles.img}
+                src="/images/twitter.svg"
+                alt="Twitter"
+              />
             </a>
           </div>
         </div>

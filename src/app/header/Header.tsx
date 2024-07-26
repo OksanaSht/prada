@@ -5,8 +5,10 @@ export const Header = () => {
   return (
     <header className={styles.header}>
       <div className={`container ${styles.container}`}>
-        <Link to="/" className={styles.logo}>
-          <img src="/images/logo.svg" alt="Globex Logo" />
+        <Link to="/">
+          <div className={styles.logo}>
+            <img src="/images/logo.svg" alt="Globex Logo" />
+          </div>
         </Link>
         <nav className={styles.menu}>
           <ul className={styles.list}>
