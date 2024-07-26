@@ -30,7 +30,7 @@ export const HomeSlider = () => {
   }, []);
 
   return (
-    <div ref={swiperRef} className={clsx("swiper", styles.slider)}>
+    <div ref={swiperRef} className="swiper">
       <div className={clsx("swiper-wrapper", styles.wrapper)}>
         <div className={clsx("swiper-slide", styles.slide)}>
           <div className={styles.container}>

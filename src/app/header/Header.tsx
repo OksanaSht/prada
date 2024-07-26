@@ -1,10 +1,11 @@
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
+import clsx from "clsx";
 
 export const Header = () => {
   return (
     <header className={styles.header}>
-      <div className={`container ${styles.container}`}>
+      <div className={clsx("container", styles.container)}>
         <Link to="/">
           <div className={styles.logo}>
             <img src="/images/logo.svg" alt="Globex Logo" />

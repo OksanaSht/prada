@@ -1,0 +1,18 @@
+div.swiper {
+  padding-bottom: 1rem;
+
+  .swiper-slide {
+    overflow: hidden;
+  }
+
+  .swiper-pagination.swiper-pagination-bullets {
+    top: unset;
+    bottom: 1rem;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: rgba(0, 36, 130, 1);
+    background-size: 100%;
+    transform: scale(1.1);
+  }
+}

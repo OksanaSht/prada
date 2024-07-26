@@ -1,16 +1,3 @@
-.slider {
-  min-width: 100vw;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  height: 95vh;
-
-  @media (min-width: 481px) and (max-width: 768px) {
-    width: 100vw;
-  }
-}
-
 .wrapper {
   margin-bottom: 3rem;
   display: flex;
@@ -18,136 +5,128 @@
   max-width: 100%;
 }
 
-// TODO
-
-.swiper-pagination .bullet-active {
-  background-color: rgba(0, 36, 130, 1);
-  background-size: 100%;
-  transform: scale(1.1);
-}
-
 .slide {
-  height: auto;
+  max-height: 700px;
   max-width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
-  .imgTextPrada {
-    width: 100%;
-    height: auto;
-  }
+.imgTextPrada {
+  width: 100%;
+  height: auto;
+}
 
-  .foreverTitle {
-    font-size: 5vw;
-    letter-spacing: 5px;
-    font-family: "Roboto Condensed", sans-serif;
-    word-wrap: break-word;
-  }
+.foreverTitle {
+  font-size: 5vw;
+  letter-spacing: 5px;
+  font-family: "Roboto Condensed", sans-serif;
+  word-wrap: break-word;
+}
 
-  .container {
-    max-height: 100%;
-    min-width: 100%;
-    background: url(/slides/background_prada.jpg);
-    background-size: cover;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+.container {
+  max-height: 100%;
+  min-width: 100%;
+  background: url(/slides/background_prada.jpg);
+  background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .girlPrada {
-    width: 50%;
-    height: 100%;
-    display: flex;
-  }
+.girlPrada {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
 
-  .imgGirl {
-    width: 100%;
-    height: auto;
-  }
+.imgGirl {
+  width: 100%;
+  height: auto;
+}
 
-  .backgroundPrada {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    font-size: 2.8vw;
-    font-weight: 700;
-    line-height: 5.5rem;
-    color: #565656;
-    padding: 1rem;
-  }
+.backgroundPrada {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 2.8vw;
+  font-weight: 700;
+  line-height: 5.5rem;
+  color: #565656;
+  padding: 1rem;
+}
 
-  .textPrada {
-    width: 60%;
-    display: flex;
-  }
+.textPrada {
+  width: 60%;
+  display: flex;
+}
 
-  .backgroundGirl {
-    background: url(/slides/girl_in_red.jpg) no-repeat center;
-    background-size: cover;
-    min-width: 100%;
-    height: 85vh;
-  }
+.backgroundGirl {
+  background: url(/slides/girl_in_red.jpg) no-repeat center;
+  background-size: cover;
+  min-width: 100%;
+  height: 85vh;
+}
 
-  .backgroundDark {
-    background-color: rgba(0, 0, 0, 0.081);
-    background-size: 100% auto;
-    height: 100%;
-    color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.backgroundDark {
+  background-color: rgba(0, 0, 0, 0.081);
+  background-size: 100% auto;
+  height: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-  .flexDark {
-    font-size: 2.8vw;
-    font-weight: 700;
-    line-height: 5rem;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    opacity: 100%;
-    width: 60%;
-    height: 100%;
-  }
+.flexDark {
+  font-size: 2.8vw;
+  font-weight: 700;
+  line-height: 5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 100%;
+  width: 60%;
+  height: 100%;
+}
 
-  .containerForever21 {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #1a4242;
-    min-width: 100%;
-  }
+.containerForever21 {
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a4242;
+  min-width: 100%;
+}
 
-  .textForever21 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 45%;
-    height: 100%;
-    color: #fff;
-    font-size: 2.8vw;
-    font-weight: 700;
-    line-height: 5rem;
-    text-align: center;
-  }
+.textForever21 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 45%;
+  height: 100%;
+  color: #fff;
+  font-size: 2.8vw;
+  font-weight: 700;
+  line-height: 5rem;
+  text-align: center;
+}
 
-  .girlForever21 {
-    width: 55%;
-    display: flex;
-  }
+.girlForever21 {
+  width: 55%;
+  display: flex;
+}
 
-  .girlForever21Img {
-    width: 100%;
-    height: auto;
-  }
+.girlForever21Img {
+  width: 100%;
+  height: auto;
 }
 
 .exploreButton {

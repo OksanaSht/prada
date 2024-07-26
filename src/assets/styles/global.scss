@@ -1,20 +1,26 @@
 @import "modern-normalize";
-@import "./variables.scss";
+@import "swiper";
+@import "./css-variables.scss";
 
 body {
   font-family: "Libre Baskerville", serif;
 }
 
 .container {
-  max-width: 97vw;
+  max-width: 1820px;
   margin: 0 auto;
   padding: 0 1rem;
 
-  @media screen and (min-width: 481px) and (max-width: 768px) {
+  @include md {
     padding: 0 2.5rem;
   }
 
-  @media screen and (min-width: 769px) and (max-width: 1024px) {
+  @include lg {
     padding: 0 2.5rem;
   }
+}
+
+hr {
+  border: 1px solid rgba(255, 255, 255, 1);
+  width: 100%;
 }

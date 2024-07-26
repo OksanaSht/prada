@@ -1,5 +1,3 @@
-@import "../../../assets/styles/variables.scss";
-
 .button {
   height: var(--element-height);
   border: 1.5px solid #000;
@@ -7,7 +5,7 @@
   padding: 1rem 3rem;
   font-size: 1.2rem;
 
-  @media screen and (max-width: 576px) {
+  @include sm {
     padding: 0.5rem 1rem;
     font-size: var(--element-height) / 1.5;
   }
@@ -22,6 +20,7 @@
   align-items: center;
   justify-content: center;
 }
+
 .light {
   border: 1.5px solid white;
   font-weight: 400;

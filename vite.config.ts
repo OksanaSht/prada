@@ -9,4 +9,11 @@ export default defineConfig({
       "@": "/src",
     },
   },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: '@import "@/assets/styles/scss-variables.scss";',
+      },
+    },
+  },
 });

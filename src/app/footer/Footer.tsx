@@ -1,8 +1,9 @@
+import clsx from "clsx";
 import styles from "./styles.module.scss";
 
 export const Footer = () => {
   return (
-    <footer className={`container, ${styles.footer}`}>
+    <footer className={clsx("container", styles.footer)}>
       <div className={styles.footerContainer}>
         <div className={styles.footerTitle}>
           <div className={styles.footerLogo}>

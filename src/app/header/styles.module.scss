@@ -5,7 +5,7 @@
   justify-content: center;
   align-items: center;
 
-  @media screen and (max-width: 768px) {
+  @include md {
     padding: 10px 0;
     display: flex;
     flex-direction: column;
@@ -17,7 +17,7 @@
 .logo {
   width: 5vw;
 
-  @media screen and (max-width: 768px) {
+  @include md {
     width: 8vw;
   }
 }
@@ -50,7 +50,7 @@ img {
   text-align: left;
   color: rgba(100, 100, 100, 1);
 
-  @media screen and (max-width: 768px) {
+  @include md {
     font-size: 2.3vw;
   }
 }
@@ -69,14 +69,9 @@ img {
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 992px) {
-    display: grid;
-    grid-template-columns: 2fr;
+  @include lg {
+    flex-direction: column;
     gap: 0.5rem;
-    justify-content: center;
-    align-items: center;
-    margin: 0 auto;
-    justify-items: center;
   }
 }
 
@@ -94,7 +89,7 @@ img {
   font-weight: 400;
   text-decoration: none;
 
-  @media screen and (max-width: 768px) {
+  @include md {
     font-size: 2.3vw;
   }
 }
