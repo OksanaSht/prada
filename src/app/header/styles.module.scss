@@ -1,25 +1,19 @@
 .header {
   background-color: rgba(255, 255, 255, 1);
-  padding: 20px 0;
+  padding: 1.5rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
 
   @include md {
-    padding: 10px 0;
+    padding: 0.8rem 0;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
   }
 }
 
 .logo {
-  width: 5vw;
-
-  @include md {
-    width: 8vw;
-  }
+  width: 4.5rem;
 }
 img {
   width: 100%;
@@ -30,37 +24,28 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-left: 15px;
+  margin-left: 1rem;
 }
 
 .avatarImg {
-  width: 42px;
-  padding-right: 10px;
+  width: 3.2rem;
+  padding-right: 0.8rem;
   box-sizing: border-box;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
 
 .avatarText {
-  font-size: 1.2vw;
+  font-size: 1rem;
   font-weight: 400;
   text-align: left;
   color: rgba(100, 100, 100, 1);
-
-  @include md {
-    font-size: 2.3vw;
-  }
 }
 
 .button {
-  width: 29px;
-  height: 29px;
+  width: 2rem;
+  height: 2rem;
   border: none;
   background: transparent;
-  margin-right: 10px;
+  margin-right: 0.7rem;
 }
 
 .container {
@@ -80,22 +65,20 @@ img {
   padding: 0;
   list-style: none;
   display: flex;
-  margin: 12px;
+  margin: 0.9rem;
+  @include md {
+    margin: 0.5rem;
+  }
 }
 
 .link {
   color: rgba(39, 39, 39, 1);
-  font-size: 1.5vw;
+  font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
-
   @include md {
-    font-size: 2.3vw;
+    font-size: 1rem;
   }
-}
-
-.form {
-  margin-right: 20px;
 }
 
 .search {
@@ -105,21 +88,21 @@ img {
 }
 
 .textSearch {
-  width: clamp(9.375rem, 3.693rem + 28.41vw, 25rem);
-  height: clamp(2.5rem, 2.318rem + 0.91vw, 3rem);
+  width: 100%;
+  height: 3rem;
   border-radius: 8px 0px 0px 8px;
   border: none;
   background-color: rgba(240, 240, 240, 1);
-  padding-left: 10px;
+  padding-left: 0.6rem;
   box-sizing: border-box;
-  font-size: clamp(0.625rem, 0.534rem + 0.45vw, 0.875rem);
+  font-size: 0.8rem;
 }
 
 .startSearch {
   background-color: rgba(240, 240, 240, 1);
   border: none;
   margin: 0;
-  height: clamp(2.5rem, 2.318rem + 0.91vw, 3rem);
+  height: 3rem;
   border-radius: 0px 8px 8px 0px;
 }
 
@@ -136,7 +119,7 @@ img {
 .list {
   display: flex;
   justify-content: space-between;
-  margin: 0 20px;
+  margin: 0 1.2rem;
 }
 
 .flexButtonsAvatar {

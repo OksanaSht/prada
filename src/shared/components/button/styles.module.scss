@@ -3,32 +3,27 @@
   border: 1.5px solid #000;
   border-radius: 10px;
   padding: 1rem 3rem;
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  background-color: transparent;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 400;
 
   @include sm {
     padding: 0.5rem 1rem;
-    font-size: var(--element-height) / 1.5;
+    font-size: 1.1rem;
   }
 }
 
 .dark {
-  font-weight: 400;
   color: rgba(34, 34, 34, 1);
-  background-color: transparent;
-  padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .light {
   border: 1.5px solid white;
-  font-weight: 400;
   color: rgba(255, 255, 255, 1);
   background-color: transparent;
-  margin-bottom: 3rem;
   padding: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }

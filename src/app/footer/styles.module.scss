@@ -1,20 +1,16 @@
 .footer {
   background-color: rgba(0, 7, 27, 1);
   color: #fff;
-  padding: clamp(10px, 1.5vw, 30px);
+  padding: 2rem;
 }
 .bottom {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 80%;
-  margin: 0 auto;
-  flex: 30%;
 
   @include sm {
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
-    margin-left: 6rem;
   }
 }
 
@@ -29,31 +25,40 @@
 }
 .footerColumns {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: start;
-  margin-left: 6rem;
+  margin-left: 0.5rem;
   margin-bottom: 2rem;
 
   @include sm {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
+  }
+  @include md {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    flex-wrap: wrap;
   }
 }
 .footerContainer {
   display: flex;
   flex-direction: column;
-  padding: 0 3%;
+  padding: 0 3rem;
+  margin: 0 auto;
+  max-width: 100%;
 }
 
 .icons {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  width: 30%;
+  min-width: 8rem;
+  margin-top: 1rem;
 }
 
 .imgIcons {
-  margin: 5%;
+  margin: 0.5rem;
 }
 
 .footerItem {
@@ -61,69 +66,60 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: start;
-  padding-top: 1rem;
-  box-sizing: border-box;
+  padding-top: 3.5rem;
   margin-right: 1.3rem;
   flex: 20%;
 }
+.footerLink {
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 1.5rem;
+  text-align: left;
+  line-height: 1.2rem;
+  text-decoration: none;
+  color: rgba(255, 255, 255, 1);
+}
 
 .itemTitle {
-  font-size: 2vw;
+  font-size: 1.5rem;
   font-weight: 700;
   text-align: left;
 
   @include sm {
     font-style: italic;
-    font-size: 4vw;
+    font-size: 0.5rem;
+  }
+  @include md {
+    font-size: 1.3rem;
+    font-style: italic;
+  }
+}
+.footerTitle {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 1.3rem;
+
+  @include sm {
+    justify-content: center;
+  }
+}
+.footerLogo {
+  width: 5rem;
+
+  @include sm {
+    min-width: 2.5rem;
   }
 }
 
-.footerLogo {
-  width: 5vw;
-  height: auto;
-  margin-bottom: 1vh;
-}
-
-.img {
-  width: 100%;
-  height: auto;
-}
-
 .footerName {
-  font-size: 6vw;
+  font-size: 4.5rem;
   font-weight: 700;
   text-align: left;
   padding-left: 2rem;
 
   @include sm {
-    font-size: 6vw;
-  }
-}
-
-.footerLink {
-  font-size: 1.3vw;
-  font-weight: 400;
-  margin-top: 2vw;
-  text-align: left;
-  line-height: 1.8vw;
-  text-decoration: none;
-  color: rgba(255, 255, 255, 1);
-
-  @include sm {
-    justify-content: center;
-    font-size: 10px;
-    line-height: 3vw;
-  }
-}
-
-.footerTitle {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  margin-bottom: 20px;
-
-  @include sm {
-    justify-content: center;
+    font-size: 3rem;
   }
 }
 
@@ -132,8 +128,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
-  font-size: 0.9rem;
+  margin-top: 1.3rem;
+  font-size: 0.8rem;
 
   @include md {
     font-size: 0.4rem;
@@ -146,15 +142,12 @@
   border: none;
   outline: none;
   padding: 0.5rem;
-
-  @include md {
-    padding: 0.1rem;
-  }
+  width: 100%;
 }
 
 .envelopeImg {
-  width: 5vw;
-  height: 4vh;
+  width: 2rem;
+  height: 1rem;
   background: url(/images/mail.svg) no-repeat center;
   background-size: auto 65%;
   background-color: rgba(0, 7, 27, 1);

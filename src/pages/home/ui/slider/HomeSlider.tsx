@@ -58,13 +58,11 @@ export const HomeSlider = () => {
 
         <div className={clsx("swiper-slide", styles.slide)}>
           <div className={styles.backgroundGirl}>
-            <div className={styles.backgroundDark}>
-              <div className={styles.flexDark}>
-                <div className={styles.foreverTitle}>FOREVER 21</div>
-                <div>Big Fashion Festival</div>
-                <div>70% - 80% off</div>
-                <Button color="light">Explore</Button>
-              </div>
+            <div className={styles.flexDark}>
+              <div className={styles.foreverTitle}>FOREVER 21</div>
+              <div>Big Fashion Festival</div>
+              <div>70% - 80% off</div>
+              <Button color="light">Explore</Button>
             </div>
           </div>
         </div>
