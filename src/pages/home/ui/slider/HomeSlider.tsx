@@ -6,7 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import styles from "./styles.module.scss";
-import { Button } from "@/shared/components/button/Button";
+import { Button } from "@/shared/components";
 
 export const HomeSlider = () => {
   const swiperRef = useRef<HTMLDivElement>(null);

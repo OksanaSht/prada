@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import styles from "./styles.module.scss";
-import { Input } from "@/components";
+import { Input } from "@/shared/components";
 import { useState } from "react";
 
 export const Footer = () => {
