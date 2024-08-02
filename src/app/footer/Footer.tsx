@@ -1,7 +1,15 @@
 import clsx from "clsx";
 import styles from "./styles.module.scss";
+import { Input } from "@/components";
+import { useState } from "react";
 
 export const Footer = () => {
+  const [email, setEmail] = useState("");
+
+  function subscribe() {
+    console.log("Subscribed with email:", email);
+  }
+
   return (
     <footer className={clsx("container", styles.footer)}>
       <div className={styles.footerContainer}>
@@ -112,16 +120,8 @@ export const Footer = () => {
               Stay in touch to get special offers, free giveaways and once in a
               lifetime deals
             </div>
-            <div className={styles.enterMail}>
-              <div className={styles.envelopeImg}></div>
-              <input
-                className={styles.mail}
-                type="email"
-                name="mail"
-                id="mail"
-                placeholder="Enter your email"
-              />
-            </div>
+            {/* TODO: add /images/mail.svg */}
+            <Input value={email} onChange={setEmail} onEnter={subscribe} />
           </div>
         </div>
         <hr />

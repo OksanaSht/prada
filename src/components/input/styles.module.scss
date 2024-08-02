@@ -1,0 +1,21 @@
+.input {
+  background-color: rgba(0, 7, 27, 1);
+  color: aliceblue;
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  width: 100%;
+}
+
+.wrapper {
+  border: 1px solid #ababab;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.3rem;
+  font-size: 0.8rem;
+
+  @include md {
+    font-size: 0.4rem;
+  }
+}
