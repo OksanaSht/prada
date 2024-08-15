@@ -1,6 +1,17 @@
+import { useState } from "react";
 import styles from "./styles.module.scss";
 
 export const HomeBanner = () => {
+  const [visible, setVisible] = useState(true);
+
+  const handleClose = () => {
+    setVisible(false);
+  };
+
+  if (visible === false) {
+    return null;
+  }
+
   return (
     <div className={styles.banner}>
       <div>
@@ -9,7 +20,11 @@ export const HomeBanner = () => {
           Invite Now
         </a>
       </div>
-      <button type="button" className={styles.buttonBanner}>
+      <button
+        type="button"
+        className={styles.buttonBanner}
+        onClick={handleClose}
+      >
         <img
           className={styles.closeImg}
           src="/images/icon_close.svg"
