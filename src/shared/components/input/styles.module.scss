@@ -3,13 +3,20 @@
   color: aliceblue;
   border: none;
   outline: none;
-  padding: 0.5rem;
   width: 100%;
+}
+
+.left,
+.right {
+  margin: 0 0.3rem;
+  display: flex;
+  align-items: center;
 }
 
 .wrapper {
   border: 1px solid #ababab;
   display: flex;
+  padding: 0.5rem;
   justify-content: center;
   align-items: center;
   margin-top: 1.3rem;

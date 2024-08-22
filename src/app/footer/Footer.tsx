@@ -120,8 +120,14 @@ export const Footer = () => {
               Stay in touch to get special offers, free giveaways and once in a
               lifetime deals
             </div>
-            {/* TODO: add /images/mail.svg */}
-            <Input value={email} onChange={setEmail} onEnter={subscribe} />
+
+            <Input
+              value={email}
+              onChange={setEmail}
+              onEnter={subscribe}
+              mode="light"
+              left={<img src="/images/mail.svg" className={styles.mail} />}
+            />
           </div>
         </div>
         <hr />

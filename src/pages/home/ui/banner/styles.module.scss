@@ -8,6 +8,15 @@
   font-size: 1.2rem;
 }
 
+.container {
+  position: relative;
+}
+
+.content {
+  display: flex;
+  justify-content: center;
+}
+
 .buttonBanner {
   border: none;
   position: absolute;
@@ -15,15 +24,14 @@
   top: 50%;
   transform: translateY(-50%);
   background-color: transparent;
-  width: 1.6rem;
+  padding: 0.6rem;
   align-items: center;
   display: flex;
   justify-content: center;
 }
 
 .closeImg {
-  width: 100%;
-  height: auto;
+  width: 1rem;
 }
 
 .linkBanner {
