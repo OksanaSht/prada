@@ -1,8 +1,16 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 import styles from "./styles.module.scss";
 import clsx from "clsx";
+import { Input } from "@/shared/components";
 
 export const Header = () => {
+  const [productSearch, setProductSearch] = useState("");
+
+  function search() {
+    console.log("Search for:", productSearch);
+  }
+
   return (
     <header className={styles.header}>
       <div className={clsx("container", styles.container)}>
@@ -42,23 +50,23 @@ export const Header = () => {
         </nav>
 
         <form className={styles.search}>
-          <input
-            className={styles.textSearch}
+          <Input
+            value={productSearch}
+            placeholder="Search here"
+            onChange={setProductSearch}
+            onEnter={search}
             type="search"
             name="search"
-            id="search"
-            placeholder="Search here"
+            mode="light"
+            border="none"
+            right={
+              <button type="submit" className={styles.button}>
+                <img src="/images/search.svg" className={styles.imgSearch} />
+              </button>
+            }
           />
-          <button className={styles.startSearch}>
-            <div className={styles.containerImg}>
-              <img
-                className={styles.imgSearch}
-                src="/images/search.svg"
-                alt="Search Icon"
-              />
-            </div>
-          </button>
         </form>
+
         <div className={styles.flexButtonsAvatar}>
           <button type="button" className={styles.button}>
             <img src="/images/heart.svg" alt="Heart" />

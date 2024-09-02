@@ -41,11 +41,9 @@ img {
 }
 
 .button {
-  width: 2rem;
-  height: 2rem;
   border: none;
   background: transparent;
-  margin-right: 0.7rem;
+  cursor: pointer;
 }
 
 .container {
@@ -85,30 +83,8 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.textSearch {
-  width: 100%;
-  height: 3rem;
-  border-radius: 8px 0px 0px 8px;
-  border: none;
   background-color: rgba(240, 240, 240, 1);
-  padding-left: 0.6rem;
-  box-sizing: border-box;
-  font-size: 0.8rem;
-}
-
-.startSearch {
-  background-color: rgba(240, 240, 240, 1);
-  border: none;
-  margin: 0;
-  height: 3rem;
-  border-radius: 0px 8px 8px 0px;
-}
-
-.containerImg {
-  display: flex;
-  height: 50%;
+  border-radius: 8px;
 }
 
 .imgSearch {
