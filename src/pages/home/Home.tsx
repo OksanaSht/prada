@@ -1,5 +1,6 @@
-import { HomeBanner } from "./ui/banner/HomeBanner";
-import { HomeSlider } from "./ui/slider/HomeSlider";
+import { HomeBanner } from "./components/banner/HomeBanner";
+import { HomeSlider } from "./components/slider/HomeSlider";
+import { HomeProducts } from "./components/products/HomeProducts";
 
 export const Home = () => {
   return (
@@ -7,6 +8,7 @@ export const Home = () => {
       <section>
         <HomeBanner />
         <HomeSlider />
+        <HomeProducts />
       </section>
     </>
   );

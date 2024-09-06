@@ -43,7 +43,6 @@ export function Input({
     ref: rightRef,
     box: "border-box",
   });
-  console.log(leftIconWidth, rightIconWidth);
   const enterHandler = onEnter
     ? {
         onKeyDown: (e: KeyboardEvent<HTMLInputElement>) => {
