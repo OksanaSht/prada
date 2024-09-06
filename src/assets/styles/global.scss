@@ -11,6 +11,11 @@ button {
   cursor: pointer;
 }
 
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
 .container {
   width: 100%;
   max-width: 1820px;
@@ -29,9 +34,4 @@ button {
 hr {
   border: 1px solid rgba(255, 255, 255, 1);
   width: 100%;
-}
-
-.img {
-  width: 100%;
-  height: auto;
 }

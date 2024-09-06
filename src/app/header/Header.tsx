@@ -49,16 +49,15 @@ export const Header = () => {
           </ul>
         </nav>
 
-        <form className={styles.search}>
+        <form className="">
           <Input
             value={productSearch}
             placeholder="Search here"
             onChange={setProductSearch}
             onEnter={search}
-            type="search"
             name="search"
             mode="light"
-            border="none"
+            border={false}
             right={
               <button type="submit" className={styles.button}>
                 <img src="/images/search.svg" className={styles.imgSearch} />

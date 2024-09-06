@@ -12,26 +12,28 @@ export const HomeBanner = () => {
   };
 
   return (
-    <div className={styles.banner} ref={animationParent}>
+    <div ref={animationParent}>
       {visible && (
-        <div className={clsx("container", styles.container)}>
-          <div className={styles.content}>
-            Invite Friends and get 50% off on your next purchase
-            <a className={styles.linkBanner} href="#">
-              Invite Now
-            </a>
+        <div className={styles.banner}>
+          <div className={clsx("container", styles.container)}>
+            <div className={styles.content}>
+              Invite Friends and get 50% off on your next purchase
+              <a className={styles.linkBanner} href="#">
+                Invite Now
+              </a>
+            </div>
+            <button
+              type="button"
+              className={styles.buttonBanner}
+              onClick={handleClose}
+            >
+              <img
+                className={styles.closeImg}
+                src="/images/icon_close.svg"
+                alt="close window"
+              />
+            </button>
           </div>
-          <button
-            type="button"
-            className={styles.buttonBanner}
-            onClick={handleClose}
-          >
-            <img
-              className={styles.closeImg}
-              src="/images/icon_close.svg"
-              alt="close window"
-            />
-          </button>
         </div>
       )}
     </div>

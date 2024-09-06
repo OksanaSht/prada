@@ -42,8 +42,8 @@ img {
 
 .button {
   border: none;
+  padding: 0;
   background: transparent;
-  cursor: pointer;
 }
 
 .container {
@@ -74,17 +74,10 @@ img {
   font-size: 1.2rem;
   font-weight: 400;
   text-decoration: none;
+
   @include md {
     font-size: 1rem;
   }
-}
-
-.search {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgba(240, 240, 240, 1);
-  border-radius: 8px;
 }
 
 .imgSearch {

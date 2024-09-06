@@ -1,5 +1,21 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include md {
+    font-size: 0.8rem;
+  }
+}
+
+$padding-y: 0.5rem;
+
 .input {
-  border: none;
+  border: 1px solid #ababab;
+  border-radius: 0.5rem;
+  padding-top: $padding-y;
+  padding-bottom: $padding-y;
   outline: none;
   width: 100%;
 }
@@ -8,30 +24,26 @@
   background-color: rgba(240, 240, 240, 1);
   color: rgba(132, 132, 132, 1);
 }
+
 .dark {
   background-color: rgba(0, 7, 27, 1);
   color: rgba(171, 171, 171, 1);
 }
 
+.borderNone {
+  border-color: transparent;
+}
+
 .left,
 .right {
-  margin: 0 0.3rem;
+  pointer-events: none;
   display: flex;
   align-items: center;
-}
+  position: absolute;
+  top: 0;
+  bottom: 0;
 
-.wrapper {
-  border: 1px solid #ababab;
-  display: flex;
-  padding: 0.5rem;
-  justify-content: center;
-  align-items: center;
-  font-size: 0.8rem;
-
-  @include md {
-    font-size: 0.5rem;
+  > * {
+    pointer-events: auto;
   }
-}
-.borderNone {
-  border: solid 1px transparent;
 }
