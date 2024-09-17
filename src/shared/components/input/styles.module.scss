@@ -17,7 +17,7 @@ $padding-y: 0.5rem;
   padding-top: $padding-y;
   padding-bottom: $padding-y;
   outline: none;
-  width: 100%;
+  max-width: 100%;
 }
 
 .light {
@@ -46,4 +46,21 @@ $padding-y: 0.5rem;
   > * {
     pointer-events: auto;
   }
+}
+
+.xs {
+  height: ($padding-y * 2) px;
+  font-size: 0.7rem;
+}
+.sm {
+  height: ($padding-y * 3) px;
+  font-size: 0.8rem;
+}
+.md {
+  height: ($padding-y * 4) px;
+  font-size: 0.9rem;
+}
+.lg {
+  height: ($padding-y * 5) px;
+  font-size: 1rem;
 }

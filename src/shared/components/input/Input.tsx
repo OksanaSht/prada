@@ -7,6 +7,7 @@ interface InputProps
   extends Omit<InputHTMLAttributes<HTMLInputElement>, "onChange"> {
   value: string;
   mode?: "light" | "dark";
+  format?: "xs" | "sm" | "md" | "lg";
   border?: boolean;
   onChange: (value: string) => void;
   onEnter?: () => void;
@@ -31,6 +32,7 @@ export function Input({
   name,
   mode = "dark",
   border = true,
+  format,
   ...props
 }: InputProps) {
   const leftRef = useRef<HTMLDivElement>(null);
@@ -70,6 +72,10 @@ export function Input({
           [styles.light]: mode === "light",
           [styles.dark]: mode === "dark",
           [styles.borderNone]: !border,
+          [styles.xs]: format === "xs",
+          [styles.sm]: format === "sm",
+          [styles.md]: format === "md",
+          [styles.lg]: format === "xs",
         })}
         style={{
           paddingLeft: leftIconWidth

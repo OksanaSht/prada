@@ -58,6 +58,7 @@ export const Header = () => {
             name="search"
             mode="light"
             border={false}
+            format="lg"
             right={
               <button type="submit" className={styles.button}>
                 <img src="/images/search.svg" className={styles.imgSearch} />
