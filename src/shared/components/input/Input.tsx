@@ -4,10 +4,10 @@ import { clsx } from "clsx";
 import { useResizeObserver } from "usehooks-ts";
 
 interface InputProps
-  extends Omit<InputHTMLAttributes<HTMLInputElement>, "onChange"> {
+  extends Omit<InputHTMLAttributes<HTMLInputElement>, "onChange" | "size"> {
   value: string;
   mode?: "light" | "dark";
-  format?: "xs" | "sm" | "md" | "lg";
+  size?: "xs" | "sm" | "md" | "lg";
   border?: boolean;
   onChange: (value: string) => void;
   onEnter?: () => void;
@@ -32,7 +32,7 @@ export function Input({
   name,
   mode = "dark",
   border = true,
-  format,
+  size = "md",
   ...props
 }: InputProps) {
   const leftRef = useRef<HTMLDivElement>(null);
@@ -72,10 +72,8 @@ export function Input({
           [styles.light]: mode === "light",
           [styles.dark]: mode === "dark",
           [styles.borderNone]: !border,
-          [styles.xs]: format === "xs",
-          [styles.sm]: format === "sm",
-          [styles.md]: format === "md",
-          [styles.lg]: format === "xs",
+          [styles.md]: size === "md",
+          [styles.lg]: size === "xs",
         })}
         style={{
           paddingLeft: leftIconWidth

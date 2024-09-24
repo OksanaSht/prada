@@ -128,7 +128,6 @@ export const Footer = () => {
               onChange={setEmail}
               onEnter={subscribe}
               mode="dark"
-              format="lg"
               left={<img src="/images/mail.svg" className={styles.mail} />}
             />
           </div>

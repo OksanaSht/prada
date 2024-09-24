@@ -1,4 +1,5 @@
 import styles from "./styles.module.scss";
+
 export interface Product {
   id: number;
   title: string;
@@ -16,20 +17,20 @@ interface ProductCardProps {
 
 export const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   return (
-    <div className={styles.product_card}>
+    <div className={styles.productCard}>
       {product.images && (
-        <div className={styles.product_card__image}>
+        <div className={styles.productCard__image}>
           <img src={product.images} alt={product.title} />
         </div>
       )}
-      <div className={styles.product_card__text}>
-        <h2 className={styles.product_card__info}>{product.title}</h2>
+      <div className={styles.productCard__text}>
+        <h2 className={styles.productCard__info}>{product.title}</h2>
 
-        <div className={styles.productBlock_rate_brand}>
+        <div className={styles.productCard_rateBrand}>
           {product.rating && <p>Rating: {product.rating}</p>}
           {product.brand && <p>Brand: {product.brand}</p>}
         </div>
-        <p className={styles.product_card__info}>Price: ${product.price}</p>
+        <p className={styles.productCard__info}>Price: ${product.price}</p>
       </div>
     </div>
   );

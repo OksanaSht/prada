@@ -1,9 +1,9 @@
-import "./styles.scss";
+import styles from "./styles.module.scss";
 
 interface CardProps {
   children: React.ReactNode;
 }
 
 export const Card = ({ children }: CardProps) => {
-  return <div>{children}</div>;
+  return <div className={styles.card}>{children}</div>;
 };
