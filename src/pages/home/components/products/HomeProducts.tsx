@@ -15,7 +15,7 @@ export const HomeProducts = () => {
   });
 
   return (
-    <div className={clsx("container", styles.product_cards)}>
+    <div className={clsx("container", styles.productCards)}>
       {data?.products.map((product: Product) => (
         <ProductCard key={product.id} product={product} />
       ))}
