@@ -127,7 +127,7 @@ export const Footer = () => {
               placeholder="Enter your email"
               onChange={setEmail}
               onEnter={subscribe}
-              mode="dark"
+              mode="light"
               left={<img src="/images/mail.svg" className={styles.mail} />}
             />
           </div>

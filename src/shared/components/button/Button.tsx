@@ -9,7 +9,7 @@ interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 
 export const Button = ({
   children,
-  color = "light",
+  color = "dark",
   className = "button",
   ...props
 }: ButtonProps) => {

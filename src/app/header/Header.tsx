@@ -56,8 +56,6 @@ export const Header = () => {
             onChange={setProductSearch}
             onEnter={search}
             name="search"
-            mode="light"
-            border={false}
             right={
               <button type="submit" className={styles.button}>
                 <img src="/images/search.svg" className={styles.imgSearch} />
@@ -74,12 +72,16 @@ export const Header = () => {
             <img src="/images/shopping.svg" alt="Basket" />
           </button>
 
-          <div className={styles.avatar}>
+          <Link to="/sign-up" className={styles.button}>
+            Sign Up
+          </Link>
+
+          {/* <div className={styles.avatar}>
             <div className={styles.avatarImg}>
               <img src="/avatar/avatar.svg" alt="Avatar" />
             </div>
             <div className={styles.avatarText}>Anne Doe</div>
-          </div>
+          </div> */}
         </div>
       </div>
     </header>

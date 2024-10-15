@@ -12,26 +12,21 @@
 $padding-y: 0.5rem;
 
 .input {
-  border: 1px solid #ababab;
+  border: 1px solid var(--element-border-color);
   border-radius: 0.5rem;
   padding-top: $padding-y;
   padding-bottom: $padding-y;
   outline: none;
-  max-width: 100%;
+  width: 100%;
+  background-color: transparent;
 }
 
 .light {
-  background-color: rgba(240, 240, 240, 1);
   color: rgba(132, 132, 132, 1);
 }
 
 .dark {
-  background-color: rgba(0, 7, 27, 1);
-  color: rgba(171, 171, 171, 1);
-}
-
-.borderNone {
-  border-color: transparent;
+  background-color: transparent;
 }
 
 .left,
@@ -46,14 +41,4 @@ $padding-y: 0.5rem;
   > * {
     pointer-events: auto;
   }
-}
-
-.md {
-  height: ($padding-y * 5) px;
-  font-size: 1rem;
-}
-
-.lg {
-  height: ($padding-y * 6) px;
-  font-size: 1.2rem;
 }
